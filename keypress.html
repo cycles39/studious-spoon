@@ -1,0 +1,8 @@
+<h2>Press any key</h2>
+<p id="out"></p>
+
+<script>
+document.onkeydown = e => {
+  document.getElementById("out").textContent = `Key: ${e.key} | Code: ${e.code}`;
+};
+</script>
