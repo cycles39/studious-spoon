@@ -1,0 +1,11 @@
+<h1 id="count">10</h1>
+<script>
+let c = 10;
+const timer = setInterval(() => {
+  document.getElementById("count").textContent = c;
+  if (c-- <= 0) {
+    clearInterval(timer);
+    document.getElementById("count").textContent = "🎉 Done!";
+  }
+}, 1000);
+</script>
